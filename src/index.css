@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@theme {
+  --color-obsidian: #090B10; --color-graphite: #171C25; --color-ice: #F2F4F7;
+  --color-silver: #B7C0CC; --color-electric: #668BC5;
+  --font-sans: "Inter Variable", system-ui, sans-serif;
+  --font-display: "Sora Variable", "Inter Variable", sans-serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, monospace;
+}
+html { scroll-behavior: smooth; }
+body { background: #090B10; color: #F2F4F7; font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
+:focus-visible { outline: 2px solid #668BC5; outline-offset: 3px; border-radius: 6px; }
+.grid-bg { background-image: linear-gradient(rgba(183,192,204,.07) 1px, transparent 1px), linear-gradient(90deg, rgba(183,192,204,.07) 1px, transparent 1px); background-size: 52px 52px; mask-image: radial-gradient(ellipse at center, #000 25%, transparent 75%); }
+.text-metal { background: linear-gradient(120deg, #F2F4F7 10%, #B7C0CC 50%, #668BC5 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.panel { background: linear-gradient(155deg, rgba(23,28,37,.95), rgba(9,11,16,.6)); border: 1px solid rgba(183,192,204,.14); }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+.spin-slow { animation: spin 60s linear infinite; transform-origin: center; transform-box: fill-box; }
+.spin-rev { animation: spin 90s linear infinite reverse; transform-origin: center; transform-box: fill-box; }
+.float { animation: float 7s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) { *, ::before, ::after { animation: none !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }

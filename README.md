@@ -1,22 +1,85 @@
-# NEXORA — Technology that moves business forward.
+# NEXORA — Institutional Website
 
-Site institucional **fictício** (projeto de portfólio). React + TypeScript + Vite + Tailwind CSS 4 + React Router + Framer Motion + Lucide.
-Páginas: `/` (Home), `/solucoes`, `/sobre`. O e-mail `contato@nexora.example` é demonstrativo. **O formulário NÃO envia mensagens**: a integração futura deve ser feita em `src/lib/contact.ts`.
+**Technology that moves business forward.**
 
-## Publicar sem terminal
+A modern institutional website developed for NEXORA, a fictional technology company focused on software development, artificial intelligence, and business automation.
 
-### 1. Enviar ao GitHub (pelo navegador)
-1. Descompacte o ZIP no app **Arquivos** do ChromeOS.
-2. Em github.com, clique em **New repository**, dê um nome (ex.: `nexora`) e clique em **Create repository**.
-3. Na página do repositório vazio, clique em **uploading an existing file**.
-4. Abra a pasta descompactada, selecione **todo o conteúdo** (`src`, `public`, `package.json`, `package-lock.json`, `vercel.json`, etc.) e arraste para a página. Arrastar pastas preserva a estrutura.
-5. Aguarde o upload, escreva uma mensagem (ex.: "Primeira versão") e clique em **Commit changes**.
-   Confira que `package.json` está na **raiz** do repositório, não dentro de outra pasta.
+The project explores a premium digital experience, combining a minimalist visual identity, refined typography, smooth animations, and responsive layouts.
 
-### 2. Publicar na Vercel
-1. Em vercel.com, entre com sua conta GitHub e clique em **Add New → Project**.
-2. Escolha o repositório `nexora` e clique em **Import**.
-3. A Vercel detecta **Vite** automaticamente (Build: `npm run build`, Output: `dist`). Não altere nada e clique em **Deploy**.
-4. Ao terminar, você recebe o link público. A cada novo commit no GitHub o site é atualizado sozinho.
+## Live Demo
 
-`vercel.json` garante que `/solucoes` e `/sobre` funcionem ao recarregar a página.
+🌐 [View NEXORA](https://nexora-institucional.vercel.app/)
+
+## Preview
+
+Explore the website's main sections:
+
+- **Home:** Brand presentation and overview of services.
+- **Solutions:** Software development, AI, and business automation.
+- **About:** Company identity, vision, and positioning.
+
+## Tech Stack
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS 4
+- React Router 7
+- Framer Motion
+- Lucide React
+
+## Design & Experience
+
+The visual direction follows a premium, dark editorial aesthetic, inspired by contemporary digital product design.
+
+Key characteristics:
+
+- Dark interface with restrained electric blue accents.
+- Original geometric NEXORA monogram.
+- Sora and Inter typography.
+- Smooth, purposeful animations.
+- Responsive layouts for desktop and mobile.
+- Clear visual hierarchy and intuitive navigation.
+
+## Project Structure
+
+The application is organized around reusable React components and separate pages for its main sections.
+
+The project uses React Router for navigation and Framer Motion for interface animations.
+
+## Getting Started
+
+To run the project locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/Felipeindev/nexora-institucional.git
+
+# Enter the project directory
+cd nexora-institucional
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
+## Important Notes
+
+- NEXORA is a fictional company created for portfolio and demonstration purposes.
+- The contact form currently performs client-side validation only; it does not send or store submissions.
+- No real customers, testimonials, business metrics, or partnerships are represented.
+
+## Author
+
+**Felipe Forlan**
+
+Web development student and creator of this project.
+
+- Portfolio: [FORLAN](https://github.com/Felipeindev)
+- GitHub: [@Felipeindev](https://github.com/Felipeindev)
+
+---
+
+*Designed and developed as a portfolio project to explore modern web development and premium digital experiences.*
